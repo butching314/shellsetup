@@ -69,8 +69,36 @@ set textwidth=200
 set colorcolumn=+1
 
 call plug#begin('~/.vim/plugged')
+  Plug 'MattesGroeger/vim-bookmarks'
+  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'easymotion/vim-easymotion'
+  Plug 'myusuf3/numbers.vim'
+  Plug 'ntpeters/vim-better-whitespace'
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'scrooloose/nerdtree'
+  Plug 'scrooloose/syntastic'
+  Plug 'ervandew/supertab'
 call plug#end()
 
 " Dracula theme fix
 set termguicolors
+
+" Configure the bookmarks plugin
+highlight BookmarkSign ctermbg=NONE ctermfg=160
+let g:bookmark_sign = '>>'
+
+"Relative numbers toggle
+nnoremap <F3> :NumbersToggle<CR>
+
+" Remove whitespace on save
+autocmd BufWritePre * StripWhitespace
+
+" Configure CtrlP
+let g:ctrlp_extensions = ['tag']
+let g:ctrlp_root_markers = ['.ctrlp', '.cabal-sandbox']
+let g:ctrlp_show_hidden = 1
+nnoremap <C-b> :CtrlPBuffer<CR>
+nnoremap <C-m> :CtrlPMixed<CR>
+nnoremap <leader>t :CtrlPTag<CR>
+nnoremap <leader>r :CtrlPMRUFiles<CR>
