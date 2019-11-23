@@ -73,12 +73,13 @@ call plug#begin('~/.vim/plugged')
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'easymotion/vim-easymotion'
+  Plug 'ervandew/supertab'
   Plug 'myusuf3/numbers.vim'
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/nerdtree'
   Plug 'scrooloose/syntastic'
-  Plug 'ervandew/supertab'
+  Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " Dracula theme fix
