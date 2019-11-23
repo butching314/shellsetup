@@ -11,7 +11,7 @@ source /Usr/marvr/shellsetup/shellalias
 ###Setup GIT
 Create your gitcongi link:
 ```
-ln -s ./gitconfig ~/.gitconfig
+ln -s ~/shellsetup/gitconfig ~/.gitconfig
 ```
 
 ###Setup VIM
@@ -20,7 +20,7 @@ https://github.com/junegunn/vim-plug
 
 Create your vimrc link:
 ```
-ln -s ./vimrc ~/.vimrc
+ln -s ~/shellsetup/vimrc ~/.vimrc
 ```
 
 Load plugins.
