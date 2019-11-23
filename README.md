@@ -1,5 +1,13 @@
 ##HowTo
 
+###Setup shortcuts
+Update ~/.zshrc
+
+Append
+```
+source /Usr/marvr/shellsetup/shellalias
+```
+
 ###Setup GIT
 Create your gitcongi link:
 ```
