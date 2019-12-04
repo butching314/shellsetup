@@ -80,10 +80,17 @@ call plug#begin('~/.vim/plugged')
   Plug 'scrooloose/nerdtree'
   Plug 'scrooloose/syntastic'
   Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Dracula theme fix
 set termguicolors
+
+" Airline customisation
+let g:airline#extensions#capslock#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline_powerline_fonts = 1
 
 " Configure the bookmarks plugin
 highlight BookmarkSign ctermbg=NONE ctermfg=160
@@ -103,3 +110,11 @@ nnoremap <C-b> :CtrlPBuffer<CR>
 nnoremap <C-m> :CtrlPMixed<CR>
 nnoremap <leader>t :CtrlPTag<CR>
 nnoremap <leader>r :CtrlPMRUFiles<CR>
+
+" VimBbye Bufdelete
+:nnoremap <Leader>q :Bdelete<CR>
+
+" Move to next buffer with Tab and previous buffer with Shift-Tab
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+
