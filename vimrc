@@ -71,9 +71,11 @@ set colorcolumn=+1
 call plug#begin('~/.vim/plugged')
   Plug 'MattesGroeger/vim-bookmarks'
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'djoshea/vim-autoread'
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'easymotion/vim-easymotion'
   Plug 'ervandew/supertab'
+  Plug 'moll/vim-bbye'
   Plug 'myusuf3/numbers.vim'
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'scrooloose/nerdcommenter'
