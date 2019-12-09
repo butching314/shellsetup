@@ -88,6 +88,7 @@ call plug#end()
 
 " Dracula theme fix
 set termguicolors
+set background=dark
 
 " Airline customisation
 let g:airline#extensions#capslock#enabled = 1
