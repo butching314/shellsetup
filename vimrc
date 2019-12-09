@@ -83,6 +83,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'scrooloose/syntastic'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'zxqfl/tabnine-vim'
 call plug#end()
 
 " Dracula theme fix
@@ -119,4 +120,3 @@ nnoremap <leader>r :CtrlPMRUFiles<CR>
 " Move to next buffer with Tab and previous buffer with Shift-Tab
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
-

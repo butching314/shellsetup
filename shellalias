@@ -8,3 +8,5 @@ alias tk='tmux kill-session'
 alias tlc='tmux list-commands'
 alias tlb='tmux list-keys'
 alias fmt-java='java -jar ~/formatter/google-java-format-1.7-all-deps.jar --replace **/*'
+alias gogo='cd $GOPATH'
+
