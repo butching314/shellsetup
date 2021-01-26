@@ -125,3 +125,9 @@ nnoremap <S-Tab> :bprevious<CR>
 
 " NerdTree will show hidden files
 let NERDTreeShowHidden=1
+
+" Custom for amazon
+" https://w.amazon.com/bin/view/EnvImprovementNinjas/VimLinkToCodeBrowser/
+"
+source /apollo/env/envImprovement/vim/plugin/LinkToCodeBrowser.vim
+
