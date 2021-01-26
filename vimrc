@@ -75,6 +75,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'dracula/vim', { 'as': 'dracula' }
   Plug 'easymotion/vim-easymotion'
   Plug 'ervandew/supertab'
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'moll/vim-bbye'
   Plug 'myusuf3/numbers.vim'
   Plug 'ntpeters/vim-better-whitespace'
@@ -121,3 +122,6 @@ nnoremap <leader>r :CtrlPMRUFiles<CR>
 " Move to next buffer with Tab and previous buffer with Shift-Tab
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
+
+" NerdTree will show hidden files
+let NERDTreeShowHidden=1
